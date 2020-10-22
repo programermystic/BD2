@@ -1,0 +1,1 @@
+select country.Name,country.Continent,country.Region,country.Population,city.Name,city.District,city.Population,countrylanguage.Language from country inner join city on city.CountryCode=country.Code inner join countrylanguage on countrylanguage.CountryCode=country.Code where (country.Continent like 'Europe');

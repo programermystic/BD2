@@ -1,0 +1,1 @@
+select * from city where CountryCode like 'BRA' and population > 1000.000;
