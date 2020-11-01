@@ -1,0 +1,1 @@
+select employees.first_name as Nombre,employees.last_name as Apellido,departments.dept_name as jefe_del_departamento from employees left join dept_emp on employees.emp_no=dept_emp.emp_no left join dept_manager on dept_emp.dept_no=dept_manager.dept_no left join departments on dept_emp.dept_no=departments.dept_no where employees.emp_no in (110022,110085,10006);
