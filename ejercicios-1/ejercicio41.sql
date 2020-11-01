@@ -1,0 +1,1 @@
+select * from country  inner join countrylanguage  on country.Code=countrylanguage.CountryCode where countrylanguage.Language like 'Spanish';
