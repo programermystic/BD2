@@ -1,1 +1,0 @@
-select distinct first_name,last_name from employees;
