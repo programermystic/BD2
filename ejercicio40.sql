@@ -1,1 +1,0 @@
-select * from country inner join city on country.Code=city.CountryCode  inner join countrylanguage  on country.Code=countrylanguage.CountryCode where countrylanguage.Language like 'Dutch';
