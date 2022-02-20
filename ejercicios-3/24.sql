@@ -1,0 +1,1 @@
+select staff.staff_id as ID,staff.first_name as Nombre,staff.last_name as Apellido,sum(payment.amount) as Total_pagos from staff inner join payment on staff.staff_id=payment.staff_id group by staff.staff_id;
