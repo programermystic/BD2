@@ -1,0 +1,1 @@
+select customer.customer_id as ID,customer.first_name as Nombre,customer.last_name as Apellido,sum(payment.amount) as Total_pagos from customer inner join payment on customer.customer_id=payment.customer_id group by customer.customer_id having sum(payment.amount)>100 order by sum(payment.amount);
