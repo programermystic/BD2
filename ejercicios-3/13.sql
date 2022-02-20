@@ -1,0 +1,1 @@
+select country.Name as Pais,count(countrylanguage.Language) as Idiomas from Country inner join countrylanguage on Country.Code=countrylanguage.CountryCode group by Country.Name order by count(countrylanguage.Language) desc;
